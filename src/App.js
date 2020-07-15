@@ -120,9 +120,18 @@ class App extends React.Component {
                   onChange={this.onBreedChange}
                 />
               </form>
+              <p>Gender</p>
+              <div className="yesNo">
+                <button type="button" onClick={this.onMaleGenderChange}>
+                  Male
+                </button>
+                <button type="button" onClick={this.onFemaleGenderChange}>
+                  Female
+                </button>
+              </div>
             </div>
-          </div>
         </div>
+      </div>
       </div>
     );
   }
