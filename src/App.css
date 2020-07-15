@@ -110,3 +110,12 @@ overflow-y: hidden;
   border: solid#545871;
   
 }
+
+.yesNo{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+
+  border: solid;
+  border-radius: 4px;
+}
