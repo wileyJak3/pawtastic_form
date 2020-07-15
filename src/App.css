@@ -60,3 +60,12 @@ overflow-y: hidden;
   background-color: #545871;
   
 }
+
+.leftSide {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  color: #545871;
+  background-color:#F7ECEB;
+}
