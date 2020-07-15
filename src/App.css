@@ -69,3 +69,13 @@ overflow-y: hidden;
   color: #545871;
   background-color:#F7ECEB;
 }
+
+.leftInputs{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* height: 30vh; */
+}
