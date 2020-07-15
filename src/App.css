@@ -128,4 +128,13 @@ overflow-y: hidden;
   align-items: center;
   background: white;
 }
- 
+.nextButton{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+
+}
