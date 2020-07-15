@@ -97,6 +97,21 @@ class App extends React.Component {
           <div className="rightSide">
             <h1> PAWTASTIC </h1>
           </div>
+
+          <div className="leftSide">
+            <div className="leftInputs">
+              <label> Name </label>
+              <form className="login-form">
+                {/* <label> Name </label> */}
+                <input
+                  type="text"
+                  placeholder="Enter name"
+                  value={this.state.name}
+                  onChange={this.onNameChange}
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     );
