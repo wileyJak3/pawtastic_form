@@ -68,4 +68,9 @@ class App extends React.Component {
       gender: "Female",
     });
   };
+  onYesSONChange = (event) => {
+    this.setState({
+      sprayedOrNeutered: "Yes",
+    });
+  };
 }
