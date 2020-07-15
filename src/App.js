@@ -49,7 +49,23 @@ class App extends React.Component {
   };
   onBirthdayChange = (event) => {
     this.setState({
-      birthday: event.target.value, //target itself is it's own html
+      birthday: event.target.value, 
+    });
+  };
+
+
+//
+  // ─── GENDER BUTTON FUNCS ──────────────────────────────────────────────────────────────
+  //
+
+  onMaleGenderChange = (event) => {
+    this.setState({
+      gender: "Male",
+    });
+  };
+  onFemaleGenderChange = (event) => {
+    this.setState({
+      gender: "Female",
     });
   };
 }
