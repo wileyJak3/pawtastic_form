@@ -16,7 +16,7 @@ class App extends React.Component {
       formCompleted: false,
     };
   }
-
+  
   onWeight1Change = (event) => {
     this.setState({
       weight: "0-25",
@@ -39,17 +39,17 @@ class App extends React.Component {
   };
   onNameChange = (event) => {
     this.setState({
-      name: event.target.value,
+      name: event.target.value, 
     });
   };
   onBreedChange = (event) => {
     this.setState({
-      breed: event.target.value,
+      breed: event.target.value, 
     });
   };
   onBirthdayChange = (event) => {
     this.setState({
-      birthday: event.target.value,
+      birthday: event.target.value, 
     });
   };
 
@@ -71,20 +71,30 @@ class App extends React.Component {
   //
   // ─── Sprayed or Neutered Funcs. ──────────────────────────────────────────────────────────────
   //
+
   onYesSONChange = (event) => {
     this.setState({
       sprayedOrNeutered: "Yes",
     });
   };
-
   onNoSONChange = (event) => {
     this.setState({
       sprayedOrNeutered: "No",
     });
   };
 
+  //
+  // ─── Weight Funcs. ──────────────────────────────────────────────────────────────
+  //
+
+  onWeightChange1 = (event) => {
+    this.setState({
+      gender: "Female",
+    });
+  };
+
   handleFormSubmission = (e) => {
-    e.preventDefault(); // preventing submit from refreshing page and clearing from. instead it will do this.state
+    e.preventDefault(); 
     this.setState({
       formCompleted: true,
     });
