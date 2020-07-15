@@ -47,4 +47,9 @@ class App extends React.Component {
       breed: event.target.value, 
     });
   };
+  onBirthdayChange = (event) => {
+    this.setState({
+      birthday: event.target.value, //target itself is it's own html
+    });
+  };
 }
