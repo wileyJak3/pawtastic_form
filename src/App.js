@@ -32,4 +32,9 @@ class App extends React.Component {
       weight: "50-100",
     });
   };
+  onWeight4Change = (event) => {
+    this.setState({
+      weight: "100+",
+    });
+  };
 }
