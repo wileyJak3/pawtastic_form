@@ -37,4 +37,9 @@ class App extends React.Component {
       weight: "100+",
     });
   };
+  onNameChange = (event) => {
+    this.setState({
+      name: event.target.value, 
+    });
+  };
 }
