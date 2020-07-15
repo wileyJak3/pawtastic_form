@@ -42,4 +42,9 @@ class App extends React.Component {
       name: event.target.value, 
     });
   };
+  onBreedChange = (event) => {
+    this.setState({
+      breed: event.target.value, 
+    });
+  };
 }
