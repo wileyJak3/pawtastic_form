@@ -119,3 +119,13 @@ overflow-y: hidden;
   border: solid;
   border-radius: 4px;
 }
+
+.weightBtns{
+  grid-column: 1/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+ 
