@@ -79,3 +79,13 @@ overflow-y: hidden;
   justify-content: space-evenly;
   /* height: 30vh; */
 }
+
+.rightInputs{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
