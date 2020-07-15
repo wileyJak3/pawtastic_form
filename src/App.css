@@ -101,3 +101,12 @@ overflow-y: hidden;
 #zoo {
   margin-right: 1vw;
 }
+
+
+.rightInputs img {
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  border: solid#545871;
+  
+}
