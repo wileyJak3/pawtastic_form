@@ -68,9 +68,23 @@ class App extends React.Component {
       gender: "Female",
     });
   };
+
+  //
+  // ─── Sprayed or Neutered Funcs. ──────────────────────────────────────────────────────────────
+  //
   onYesSONChange = (event) => {
     this.setState({
       sprayedOrNeutered: "Yes",
     });
   };
 }
+onNoSONChange = (event) => {
+  this.setState({
+    sprayedOrNeutered: "No",
+  });
+};
+
+
+//
+// ─── Weight Funcs. ──────────────────────────────────────────────────────────────
+//
