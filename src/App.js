@@ -16,7 +16,7 @@ class App extends React.Component {
       formCompleted: false,
     };
   }
- 
+
   onWeight1Change = (event) => {
     this.setState({
       weight: "0-25",
@@ -39,22 +39,21 @@ class App extends React.Component {
   };
   onNameChange = (event) => {
     this.setState({
-      name: event.target.value, 
+      name: event.target.value,
     });
   };
   onBreedChange = (event) => {
     this.setState({
-      breed: event.target.value, 
+      breed: event.target.value,
     });
   };
   onBirthdayChange = (event) => {
     this.setState({
-      birthday: event.target.value, 
+      birthday: event.target.value,
     });
   };
 
-
-//
+  //
   // ─── GENDER BUTTON FUNCS ──────────────────────────────────────────────────────────────
   //
 
@@ -77,14 +76,29 @@ class App extends React.Component {
       sprayedOrNeutered: "Yes",
     });
   };
+
+  onNoSONChange = (event) => {
+    this.setState({
+      sprayedOrNeutered: "No",
+    });
+  };
+
+  handleFormSubmission = (e) => {
+    e.preventDefault(); // preventing submit from refreshing page and clearing from. instead it will do this.state
+    this.setState({
+      formCompleted: true,
+    });
+    console.log("Form is submitted");
+  };
+  render() {
+    return (
+      <div>
+        <div className="parent">
+          <div className="rightSide">
+            <h1> PAWTASTIC </h1>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-onNoSONChange = (event) => {
-  this.setState({
-    sprayedOrNeutered: "No",
-  });
-};
-
-
-//
-// ─── Weight Funcs. ──────────────────────────────────────────────────────────────
-//
