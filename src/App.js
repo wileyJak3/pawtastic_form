@@ -100,7 +100,7 @@ class App extends React.Component {
 
           <div className="leftSide">
             <div className="leftInputs">
-              <label> Name </label>
+            <label> Name </label>
               <form className="login-form">
                 {/* <label> Name </label> */}
                 <input
@@ -151,6 +151,15 @@ class App extends React.Component {
                   onChange={this.onBirthdayChange}
                 />
               </form>
+              <p>Sprayed Or Neutered</p>
+              <div className="yesNo">
+                <button type="button" onClick={this.onYesSONChange}>
+                  Yes
+                </button>
+                <button type="button" onClick={this.onNoSONChange}>
+                  No
+                </button>
+              </div>
             </div>
           </div>
         </div>
