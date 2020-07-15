@@ -100,7 +100,7 @@ class App extends React.Component {
 
           <div className="leftSide">
             <div className="leftInputs">
-            <label> Name </label>
+              <label> Name </label>
               <form className="login-form">
                 {/* <label> Name </label> */}
                 <input
@@ -158,6 +158,23 @@ class App extends React.Component {
                 </button>
                 <button type="button" onClick={this.onNoSONChange}>
                   No
+                </button>
+              </div>
+            </div>
+            <div className="weightBtns">
+              <p>Weight</p>
+              <div className="yesNo">
+                <button type="button" onClick={this.onWeight1Change}>
+                  0-25 lbs
+                </button>
+                <button type="button" onClick={this.onWeight2Change}>
+                  25-50 lbs
+                </button>
+                <button type="button" onClick={this.onWeight3Change}>
+                  50-100 lbs
+                </button>
+                <button type="button" onClick={this.onWeight4Change}>
+                  100+ lbs
                 </button>
               </div>
             </div>
