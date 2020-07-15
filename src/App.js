@@ -100,7 +100,7 @@ class App extends React.Component {
 
           <div className="leftSide">
             <div className="leftInputs">
-            <label> Name </label>
+              <label> Name </label>
               <form className="login-form">
                 {/* <label> Name </label> */}
                 <input
@@ -130,8 +130,30 @@ class App extends React.Component {
                 </button>
               </div>
             </div>
+
+            <div className="headerClass">
+              <h3> Yay, we love dogs! Give us the basics about your pup. </h3>
+            </div>
+            <div className="rightInputs">
+              <div className="uploadImg">
+                <img
+                  id="zoo"
+                  src="https://i.pinimg.com/originals/be/f2/8d/bef28d8311ef02dc6a6456b5298b9709.jpg"
+                ></img>
+                <p>upload your image</p>
+              </div>
+              <label> Birthday </label>
+              <form>
+                <input
+                  type="date"
+                  placeholder="Enter birthday"
+                  value={this.state.birthday}
+                  onChange={this.onBirthdayChange}
+                />
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     );
   }
