@@ -100,7 +100,7 @@ class App extends React.Component {
 
           <div className="leftSide">
             <div className="leftInputs">
-              <label> Name </label>
+            <label> Name </label>
               <form className="login-form">
                 {/* <label> Name </label> */}
                 <input
@@ -176,11 +176,26 @@ class App extends React.Component {
                 <button type="button" onClick={this.onWeight4Change}>
                   100+ lbs
                 </button>
+                
               </div>
+              <div className="yesNo">
+              <button >
+                Back
+              </button>
+              <button  type="Next" onClick={this.handleFormSubmission}>
+                Next
+              </button>
             </div>
+            </div>
+            
           </div>
         </div>
+        {/* goal: when form submission is true, i would like to display a note aka modal */}
+        {this.state.formCompleted === true ? (
+          <h2> Please go to the login page now!</h2>
+        ) : null}
       </div>
     );
   }
 }
+export default App;
