@@ -100,7 +100,7 @@ class App extends React.Component {
 
           <div className="leftSide">
             <div className="leftInputs">
-              <label> Name </label>
+            <label> Name </label>
               <form className="login-form">
                 {/* <label> Name </label> */}
                 <input
@@ -108,6 +108,16 @@ class App extends React.Component {
                   placeholder="Enter name"
                   value={this.state.name}
                   onChange={this.onNameChange}
+                />
+              </form>
+              <label> Breed </label>
+              <form className="login-form">
+                {/* <label> Breed </label> */}
+                <input
+                  type="text"
+                  placeholder="Enter breed"
+                  value={this.state.breed}
+                  onChange={this.onBreedChange}
                 />
               </form>
             </div>
